@@ -17,8 +17,8 @@ with request.urlopen(req, data=login_data.encode('utf-8')) as f:
 
 
 #读取需要查询的文件(文件中ip得是一行一条的形式)
-with open(r'C:\Users\Administrator\Desktop\source.txt', 'r',encoding='utf-8',errors='ignore') as r:
-    with open(r'C:\Users\Administrator\Desktop\zzz.txt', 'w', encoding='utf-8') as w:
+with open(r'待搜索的源文件的绝对路径', 'r',encoding='utf-8',errors='ignore') as r:
+    with open(r'生成结果文件的绝对路径', 'w', encoding='utf-8') as w:
         print('开始查询：')
         line = r.readline()
         while line:
